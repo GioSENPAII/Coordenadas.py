@@ -1,4 +1,5 @@
 import math
+#La lista de coordenadas se guarda en la variable posterior y solo puede servir la función de "cercanos" a menos de que la coordenada este dentro de esta lista
 lista_coordenadas=[(2,3),(12,30),(40,50),(5,1),(12,10),(3,4)]
 almacen=[]
 temporal=[]

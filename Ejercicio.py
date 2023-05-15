@@ -1,6 +1,9 @@
+#Sin usuario (el usuario no pone la coordenada a buscar)
 import math
-#La lista de coordenadas se guarda en la variable posterior y solo puede servir la función de "cercanos" a menos de que la coordenada este dentro de esta lista
-lista_coordenadas=[(2,3),(12,30),(40,50),(5,1),(12,10),(3,4)]
+import random
+import time
+inicio=time.time()
+lista_coordenadas= coordenadas = [(random.randint(1, 100), random.randint(1, 100)) for _ in range(40)]
 almacen=[]
 temporal=[]
 resultados=[]
@@ -29,5 +32,9 @@ def cercanos(lista,coordenada):
     resultados_finales.clear()
     lista.append(temporal[0])
     temporal.clear()
+print(lista_coordenadas)
+usuario_coordenada=lista_coordenadas[random.randint(0,20)]
 
-cercanos(lista_coordenadas,(2,3))
+cercanos(lista_coordenadas,usuario_coordenada)
+final=time.time()
+print((final-inicio)*1000)
